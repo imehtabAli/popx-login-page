@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import Logo from '../assets/Logo.jpg?url?url';
+import Logo from '../assets/Logo.jpg?url';
 const ProfilePageComponent = ({currentUser, setCurrentUser}) => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
@@ -42,7 +42,7 @@ useEffect(() => {
       <div className="profile-section">
         <div className="profile-pic">
           <img
-            src="src/assets/logo.jpg"
+            src="{Logo}"
             alt="profile"
             className="avatar"
           />
