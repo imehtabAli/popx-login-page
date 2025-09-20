@@ -42,7 +42,7 @@ useEffect(() => {
       <div className="profile-section">
         <div className="profile-pic">
           <img
-            src="{Logo}"
+            src={Logo}
             alt="profile"
             className="avatar"
           />
