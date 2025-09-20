@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+/* Welcome DIV CSS */
+
+.welcome-div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.welcome-div a {
+    display: block;
+    width: 90%;
+    max-width: 400px;
+    margin-top: .6rem;
+    text-decoration: none;
+}
+
+.welcome-div a button {
+    width: 100%;
+}
+
+.welcome-div img{
+    width: 100%;
+    max-width: 350px;
+    border-bottom: 1px solid #cececece;
+    object-fit: contain;
+}
+
+.welcome-div h1 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0 0;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.welcome-div p{
+    width: 90%;
+    max-width: 400px;
+    margin: .6rem 0px .8rem 0rem;
+    line-height: 1.4rem;
+    opacity: .7;
+    text-align: center;
+}
+
+.welcome-div button{
+    margin-top: .6rem;
+    background-color: #6C25FF;
+    color: white;
+    width: 90%;
+    height: 2.4rem;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    font-size: .95rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.welcome-div button:hover {
+    opacity: 0.9;
+}
+
+.welcome-div a:last-child button{
+    background-color: #CEBAFB;
+    color: Black;
+}
+
+@media (max-width: 480px) {
+    .welcome-div {
+        padding: 0.5rem;
+    }
+    
+    .welcome-div h1 {
+        font-size: 1.3rem;
+    }
+    
+    .welcome-div p {
+        font-size: 0.9rem;
+        line-height: 1.3rem;
+    }
+}
+
+/* Login DIV CSS */
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  max-width: 400px;
+  margin: auto;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+.login-div h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.login-div p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: left;
+  width: 100%;
+  line-height: 1.4rem;
+}
+
+.login-div label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #6C25FF;
+  display: block;
+  margin-bottom: 0.3rem;
+  text-align: left;
+  width: 100%;
+}
+
+.login-div input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  font-size: 0.9rem;
+}
+
+.login-div input:focus {
+  border-color: #6C25FF;
+  outline: none;
+}
+
+.login-div button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 6px;
+  background-color: #6C25FF;
+  color: #fff;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.login-div button:hover {
+  background-color: #4a0ecc;
+}
+
+.login-div button:active {
+  background-color: #370a99;
+  transform: scale(0.98);
+}
+
+.link-text {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.signup-link {
+  color: #6C25FF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+  color: #4a0ecc;
+}
+
+
+/* Signup Component CSS*/
+
+.signup-div {
+  max-width: 400px;
+  margin: auto;
+  padding: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+  font-family: sans-serif;
+}
+
+.signup-div h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.signup-div label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #6C25FF;
+  display: block;
+  margin: 0.5rem 0 0.2rem;
+}
+
+.signup-div input[type="text"],
+.signup-div input[type="number"],
+.signup-div input[type="email"],
+.signup-div input[type="password"] {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.signup-div input:focus {
+  outline: none;
+  border-color: #6C25FF;
+}
+
+.signup-div .radio-group {
+  margin: 0.8rem 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.signup-div input[type="radio"] {
+  margin-right: 0.4rem;
+}
+
+.signup-div button {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 1rem;
+  background-color: #6C25FF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.signup-div button:hover {
+  background-color: #4a0ecc;
+}
+
+.signup-div button:active {
+  background-color: #370a99;
+  transform: scale(0.98);
+}
+
+.login-link {
+  color: #6C25FF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+  color: #4a0ecc;
+}
+
+/* Profile Setting */
+
+.account-container {
+  border-radius: 6px;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.profile-pic {
+  position: relative;
+  margin-right: 1rem;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.camera-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #6a0dad;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.email {
+  font-size: 14px;
+  color: #666;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.account-container button {
+  border: none;
+  margin-top: 1rem;
+  background-color: #6a0dad;
+  color: white;
+  width: 7rem;
+  height: 1.6rem;
+  border-radius: 4px;
+}
